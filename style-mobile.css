@@ -1,0 +1,18 @@
+main section{
+    flex-direction: column;
+}
+
+.imagem #controller  #img-base-teclado{
+    width: 170px;
+    height: 70px;
+   }
+   .imagem #controller  #img-base-teclado #text-principal{
+    font-size: 0.8rem;
+    }
+    .imagem #controller  #img-base-teclado #text-sub{
+        font-size: 0.6rem;
+    }
+    main section #textos h2{
+        
+        width: 100%;
+    }
