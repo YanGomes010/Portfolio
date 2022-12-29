@@ -13,16 +13,6 @@ window.addEventListener('resize', function () {
 }});
 
 
-window.addEventListener('resize', function () {
-    //var altura = window.innerHeight;
-    var largura = window.innerWidth;
-
-    if (largura < 480) {
-       
-       let img = document.querySelector("#tt")
-       img.classList.remove("img-base-teclado-768")
-       img.classList.add("img-base-teclado-480")
-}});
 
 
 
