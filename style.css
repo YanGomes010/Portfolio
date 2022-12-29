@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt&family=Vesper+Libre&display=swap');
 /*font-family: 'Rokkitt', serif;*/
+
 *{
     margin: 0;
     padding: 0;
@@ -42,7 +43,7 @@ main section #textos p{
 
 }
 
-.imagem #controller  #img-base-teclado{
+.imagem #controller .img-base-teclado{
  width: 210px;
  height: 90px;
  background: linear-gradient(180deg, #201004 8.85%, #000000 93.75%);
@@ -53,9 +54,45 @@ backdrop-filter: blur(2px);
     color: #FFFFFF;
     
 }
-.imagem #controller  #img-base-teclado #text-principal{
+.imagem #controller  .img-base-teclado .text-principal{
 font-size: 1.1rem;
 }
-.imagem #controller  #img-base-teclado #text-sub{
+.imagem #controller  .img-base-teclado .text-sub{
     font-size: 1rem;
 }
+
+#navbarOffcanvasLg{
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+#teste2{
+    margin-top: 12px;
+}
+.img-base-teclado-768{
+    width: 190px;
+    height: 90px;
+    background: linear-gradient(180deg, #201004 8.85%, #000000 93.75%);
+backdrop-filter: blur(2px);
+ border-radius: 10px;
+ flex-direction: column;
+    bottom: -30px;
+    color: #FFFFFF;
+   }
+   .img-base-teclado-480{
+    width: 170px;
+    height: 70px;
+    background: linear-gradient(180deg, #201004 8.85%, #000000 93.75%);
+    backdrop-filter: blur(2px);
+     border-radius: 10px;
+     flex-direction: column;
+        bottom: -30px;
+        color: #FFFFFF;
+   }
+   .text-principal480{
+    font-size: 1rem;
+    }
+    .text-sub480{
+        font-size: 0.8rem;
+    }
