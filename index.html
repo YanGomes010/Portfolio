@@ -1,62 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <script src="https://kit.fontawesome.com/8cd7492fbf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" media="(max-width: 768px)" href="./style-mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <title>Yan Desenvolvedor</title>
-   <style>
-   @media screen and (max-width: 991px) {
-    #navbarOffcanvasLg{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-  }</style>
+    <style>
+        @media screen and (max-width: 991px) {
+            #navbarOffcanvasLg {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media screen and (max-width:768px) {
+                h3 {
+                    margin: auto;
+                }
+            }
+
+            @media screen and (max-width:480px) {
+                #tt {
+                    width: 170px;
+                    height: 70px;
+                }
+
+                .text-sub {
+                    font-size: 10px;
+                }
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div class="container-fluid">
-    <header class="d-flex mt-2 justify-content-between align-items-center">
-            <nav class="navbar  navbar-expand-lg bg-body-tertiary fixed-top">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-                  <span class="navbar-toggler-icon"></span>
+    <div id="container" class="container-fluid">
+        <header class="d-flex mt-2 justify-content-between align-items-center">
+            <nav id="nav" class="navbar  navbar-expand-lg bg-body-tertiary fixed-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg"
+                    aria-labelledby="navbarOffcanvasLgLabel">
                     <img src="./images/YanGomes-removebg-preview.png" class="img-fluid" alt="YANGOMES">
-                    <ul class="nav">
-                        <li  class=" btn-dark-mode nav-item "><i id="teste2" onclick="ThemeMode()" class="fa-solid fa-circle-half-stroke"></i></li>
-                        <li onclick="teste()" class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li  class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-                        <li   class=" nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <ul id="ul-nav-menu" class="nav">
+                        <li onclick="teste()" class="nav-item"><a class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                        <li class=" nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                     </ul>
                 </div>
-              </nav>
-    </header>
-    <main class="container-fluid">
-        <section id="sec-first" class="w-100 mt-5 p-5 d-flex justify-content-around align-items-center">
-            <div id="textos">
-                <h2 >Seja bem vindo(a) ao meu espaço 
-                    especial!</h2>
+            </nav>
+        </header>
+        <main class="container-fluid">
+            <section id="sec-first-intro" class="container-fluid d-flex justify-content-around align-items-center">
+                <div id="textos">
+                    <h2>Seja bem vindo(a) ao meu espaço especial!</h2>
                     <p>Quero que você, conheça meu trabalho da melhor maneira possivel</p>
-            </div>
-            <div class="imagem">
-                <div id="controller" class="w-100 h-100 position-relative d-flex justify-content-center">
-                <img class="w-100" src="./images/img-teclado.png" alt="">
-                <div id="tt" class=" img-base-teclado position-absolute d-flex text-center ">
-                    <i  class="formatter text-principal mb-2 mt-1">Site visualmente moderno</i>
-                    <i class=" formatter text-sub">Priorizando a compreensão visual do cliente!</ip>
                 </div>
+                <div class="imagem d-flex justify-content-end">
+                    <div id="controller" class="ml-3 w-100 h-100 position-relative d-flex justify-content-center">
+                        <img class="w-100" src="./images/img-teclado.png" alt="">
+                        <div id="tt" class=" img-base-teclado position-absolute d-flex text-center ">
+                            <i class="text-principal mb-2 mt-1">Site visualmente moderno</i>
+                            <i class="text-sub">Priorizando a compreensão visual do cliente!</ip>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
-</div>
+            </section>
+            <section class="sec-second-concepts">
+                <h2 class="titles-sections-format">Conceitos de construção</h2>
+                <div class="grid  g-row-md-1 text-center">
+                    <div class="row justify-content-between">
+                        <div class="format-grid col-11  col-lg-3 col-md-5">
+                            <div class="title-card-grid">
+                                <h3>Responsividade</h3>
+                            </div>
+                            <div class="box-grid-img position-absolute">
+                                <img class="img-grid-card" src="./images/celularResponsividade.svg" alt="">
+                            </div>
+                            <div class="text-grid-card">
+                                <p>A implementação de layouts responsivos entrega maior e melhor resultado tanto em
+                                    estética, quanto em melhoria de desempenho!</p>
+                            </div>
+                        </div>
+                        <div class="format-grid col-11  col-lg-3 col-md-5">
+                            <div class="title-card-grid">
+                                <h3>Código limpo</h3>
+                            </div>
+                            <div class="box-grid-img position-absolute">
+                                <img class="img-grid-card" src="./images/lampCodigoLimpo.svg" alt="">
+                            </div>
+                            <div class="text-grid-card">
+                                <p>O código bem construido e melhor estruturado garante segurança e fácil identificação
+                                    de erros!</p>
+                            </div>
+                        </div>
+                        <div class="format-grid col-11  col-lg-3 col-md-5">
+                            <div class="title-card-grid">
+                                <h3>Design</h3>
+                            </div>
+                            <div class="box-grid-img position-absolute">
+                                <img class="img-grid-card" src="./images/pcDesign.svg" alt="">
+                            </div>
+                            <div class="text-grid-card">
+                                <p>Páginas bem elaboradas e com cores armonizadas, geram maior tempo de conexão do
+                                    usuario. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
-<script src="./script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script></body>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
 <script src="https://kit.fontawesome.com/8cd7492fbf.js" crossorigin="anonymous"></script>
+
 </html>

@@ -1,30 +1,4 @@
 
-
-window.addEventListener('resize', function () {
-    //var altura = window.innerHeight;
-    var largura = window.innerWidth;
-
-    if (largura < 768) {
-       let sec = document.querySelector('#sec-first')
-       sec.classList.remove("p-5")
-       let img = document.querySelector("#tt")
-       img.classList.remove("img-base-teclado")
-       img.classList.add("img-base-teclado-768")
-}});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function ThemeMode(){
     const textos = document.querySelector("#textos")
             var element = document.body;
