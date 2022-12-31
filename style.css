@@ -8,6 +8,7 @@
 }
 #container{
     min-width: 324px;
+    max-width: 1800px;
 }
 #nav{
     max-width: 1800px;
@@ -34,16 +35,16 @@ a.nav-link:hover{
 .darkmode-color{
     color: #FFFFFF;
 }
-main section{
+main #sec-first-intro{
     font-family: 'Rokkitt', serif;
     margin-top: 200px;
     width: 100%;
 }
-main section #textos h2{
+main #sec-first-intro #textos h2{
     font-size: 2.7rem;
     
 }
-main section #textos p{
+main #sec-first-intro #textos p{
     font-size: 1.2rem;
 }
 
@@ -145,4 +146,28 @@ font-size: 1.1rem;
   }
   .text-grid-card p{
     font-size: 20px;
+  }
+
+  .skills-box{
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 40px 20px 40px;
+    height: 200px;
+    background-color: #201004;
+  }
+  .box-img-skills{
+    max-width:90px ;
+    height: 90px;
+    background-color: #BEBEBE;
+  }
+  .box-img-skills img{
+    width: 90px;
+  }
+
+  .projects-div {
+    height: 300px;
+    background-color: #201004;
   }

@@ -1,8 +1,8 @@
-main section{
+main #sec-first-intro{
     flex-direction: column;
     margin-top: 90px;
 }
-    main section #textos h2{
+    main #sec-first-intro #textos h2{
         width: 100%;
     }
 
