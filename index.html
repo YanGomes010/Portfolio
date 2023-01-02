@@ -18,6 +18,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
             }
             .about{
                 text-align: center;
@@ -27,6 +28,11 @@
                 display:flex;
             }#social-medias-footer{
                 display: none;
+            }
+            main #sec-first-intro{
+                background-image:none;
+                flex-direction: column-reverse;
+                margin-top: 90px;
             }
         }
             @media screen and (max-width:768px) {
@@ -53,11 +59,10 @@
     </style>
 </head>
 
-<body>
+<body >
     <div id="container" class="container-fluid">
         <header class="d-flex mt-2 justify-content-between align-items-center">
             <nav id="nav" class="navbar  navbar-expand-lg bg-body-tertiary fixed-top">
-                
                 <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                     <span class="navbar-toggler-icon"></span>
@@ -76,14 +81,12 @@
                         <a  target="_blank" href="https://wa.me/qr/BPTZTIOUPR5GJ1"><img class="medias" src="./images/whatsapp.svg" alt=""></a>
                     </div>
                 </div>
-
-
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg"
                     aria-labelledby="navbarOffcanvasLgLabel">
                     <img src="./images/YanGomes-removebg-preview.png" class="img-fluid" alt="YANGOMES">
                     <ul id="ul-nav-menu" class="nav">
-                        <li  class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
                         <li  class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                        <li  class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
                         <li  class=" nav-item"><a class="nav-link" href="#about">Contato</a></li>
                     </ul>
                 </div>
@@ -91,18 +94,19 @@
         </header>
         <main class="container-fluid">
             <section id="sec-first-intro" class="container-fluid d-flex justify-content-around align-items-center">
-                <div id="textos">
-                    <h2>Seja bem vindo(a) ao meu espaço especial!</h2>
-                    <p>Quero que você, conheça meu trabalho da melhor maneira possivel</p>
-                </div>
+               
                 <div class="imagem d-flex justify-content-end">
                     <div id="controller" class="ml-3 w-100 h-100 position-relative d-flex justify-content-center">
-                        <img class="w-100" src="./images/img-teclado.png" alt="">
+                        <img class="w-100" src="./images/img-first-sec.png" alt="">
                         <div id="tt" class=" img-base-teclado position-absolute d-flex text-center ">
                             <i class="text-principal mb-2 mt-1">Site visualmente moderno</i>
                             <i class="text-sub">Priorizando a compreensão visual do cliente!</i>
                         </div>
                     </div>
+                </div>
+                <div id="textos">
+                    <h2>Seja bem vindo(a) ao meu espaço especial!</h2>
+                    <p>Quero que você, conheça meu trabalho da melhor maneira possivel</p>
                 </div>
             </section>
             <section class="sec-second-concepts">
@@ -148,9 +152,9 @@
                     </div>
                 </div>
             </section>
-            <section class="sec-tree-skills">
+            <section id="habilidades" class="sec-tree-skills">
                 <h2 class="titles-sections-format">Habilidades</h2>
-                <div class="grid text-center">
+                <div  class="grid text-center">
                     <div class="row justify-content-center">
                         <div class=" skills-box col-md-3 col-sm-5 col-10 col-lg-2">
                             <h3>GIT</h3>
